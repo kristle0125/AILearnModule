@@ -1,0 +1,466 @@
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Lesson-completed {
+  display: block;
+  margin: 0 auto;
+  background-color: #001840;
+  color: #fffdf0;
+  padding: 1.1rem;
+  border-radius: 50px;
+  width: 60vw;
+  margin-bottom: 2rem;
+}
+
+.Lesson-completed:active{
+  transform: scale(0.98);
+
+}
+
+body{
+  background: #fffdf0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: 100vw;
+}
+.container{
+  display: flex;
+  background-color: #fffdf0;
+  width: 100vw;
+}
+nav{
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  background: #001840;
+  width: 260px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Customize the appearance of the thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #f5c400;
+  border-radius: 10px;
+}
+.sidebar-content {
+  position: relative;
+  overflow-y: scroll;
+  max-height: calc(100vh - 50px); /* Adjust based on the height of the footer */
+}
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #001840;
+  color: #fff; /* Example text color */
+}
+
+
+.logo {
+    text-align: center;
+    height: 12vh;
+    display: flex;
+    color: #fffdf0;
+    margin: -10px 0 0 5px; /* Adjusted margin */
+
+  }
+
+  a {
+    position: relative;
+    font-size: 0.8rem;
+    display: block;
+    max-width: 280px; /* Set maximum width */
+    width: auto; /* Allow the width to adjust based on content */
+    padding: 10px 0;
+    margin-top: 0;
+    color: #fffdf0;
+    text-decoration: none;
+  }
+  
+  nav .fas {
+    position: absolute; /* Change position to absolute */
+    top: 50%; /* Position at the center vertically */
+    transform: translateY(-50%); /* Center vertically */
+    left: 10px; /* Adjust the position */
+    font-size: 15px;
+    color: #fffdf0;
+  }
+  
+  .M1 {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #f5c400;
+  }
+  
+  .nav-item {
+    margin-left: 50px;
+    margin-right: 20px; /* Increase margin on the right side */
+    display: inline-block;
+  }
+  
+  .nav-item span {
+    display: inline-block;
+    max-width: calc(100% - 50px); /* Limit the width of the text */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  hr {
+    height: 1px; /* Set the height of the line */
+    background-color: #fffdf0; /* Set the color of the line */
+    border: none; /* Remove default border */
+  }
+  
+  a:hover {
+    background: #f5c400;
+    color: #001840;
+  }
+  
+  .logo:hover,
+  .M1:hover {
+    background: none;
+  }
+  
+  .logout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+/*module section*/
+.banner {
+  display: flex;
+  align-items: center;
+  height: 12rem;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url('img/Userprofile.png'); /* Specify the URL of your background image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  color: white; /* Set text color to white for better visibility */
+}
+
+.Module1 {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.Module1 h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.Module1 i:hover{
+  color: #f5c400;
+  transform: scale(1.1); /* Scale up the card on hover */
+
+}
+
+.Module1 p {
+  margin: 5px 0;
+}
+
+/*Lesson 1*/
+.banner1 {
+  display: flex;
+  align-items: center;
+  height: 12rem;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url('img/Userprofile.png'); /* Specify the URL of your background image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  color: white; /* Set text color to white for better visibility */
+  margin-top: 2rem;
+}
+
+.Lesson {
+  flex-grow: 1;
+  text-align: center;
+}
+.Lesson p {
+  margin: 5px 0;
+}
+
+.LessonBanner {
+  display: flex;
+  align-items: center;
+  height: 6rem;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url('img/LessonBanner.png'); /* Specify the URL of your background image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the background image */
+  color: #001840; /* Set text color to white for better visibility */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.LessonBanner h1 {
+  flex-grow: 1;
+  text-align: center;
+}
+
+
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Hide all main sections except the first one by default */
+.main:not(:first-of-type) {
+  display: none;
+}
+
+
+.course-overview{
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.course-overview-text p{
+  text-align: justify;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.course-overview-text hr {
+  height: 1px; /* Set the height of the line */
+  background-color: #001840; /* Set the color of the line */
+  border: none; /* Remove default border */
+  width: 50vw;
+  margin: 0 auto; /* Center the line horizontally */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.course-overview-text span{
+  text-align: center;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+.course-overview-text .completion-text {
+  margin-bottom: 20px; /* Add desired space between paragraphs */
+}
+
+.course-overview-text .learning-styles {
+  text-align: justify;
+  margin-left: 50px; /* Adjust as needed */
+}
+
+.course-overview-text h3{
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.course-overview-text h2{
+  margin-left: 8rem;
+  margin-right: 8rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.course-overview-text .Lessontable{
+    display: table;
+    width: 80%; /* Adjust the width as needed */
+    margin-left: auto; /* Center the table horizontally */
+    margin-right: auto; /* Center the table horizontally */
+    border-collapse: collapse;
+}
+
+.Lessontable {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.row {
+  display: table-row;
+}
+
+.col {
+  display: table-cell;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.col p {
+    margin: 0; /* Remove default margin */
+    margin-bottom: 1rem;
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.5; /* Adjust line height for better readability */
+    color: #333; /* Adjust text color */
+}
+  
+  
+
+/* Courses */
+.main-course{
+  margin-top:20px ;
+  text-transform: capitalize;
+}
+.course-box{
+  width: 100%;
+  height: relative;
+  padding: 10px 10px 30px 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.course-box ul{
+  list-style: none;
+  display: flex;
+}
+.course-box ul li{
+  margin: 10px;
+  color: gray;
+  cursor: pointer;
+}
+.course-box ul .active{
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.course-box .course{
+  display: flex;
+}
+
+.box{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: rgb(235, 233, 233);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  background: url('img/box1.png') center/cover no-repeat; /* Set background image */
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.box1{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(235, 233, 233);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    background: url('img/box2.png') center/cover no-repeat; /* Set background image */
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.box2{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(235, 233, 233);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    background: url('img/box3.png') center/cover no-repeat; /* Set background image */
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+
+.box3{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(235, 233, 233);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    background: url('img/box4.png') center/cover no-repeat; /* Set background image */
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+
+.box4{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(235, 233, 233);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    background: url('img/box5.png') center/cover no-repeat; /* Set background image */
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+
+  .box4 p1{
+    color: transparent;
+  }
+
+  .box5{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(235, 233, 233);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    background: url('img/box6.png') center/cover no-repeat; /* Set background image */
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+.box p{
+  font-size: 12px;
+  margin-top: 5px;
+
+}
+.box button,
+.box1 button,
+.box2 button,
+.box3 button,
+.box4 button,
+.box5 button{
+  background: #001840;
+  color: #fffdf0;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-top: 3rem;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.box button:hover,
+.box1 button:hover,
+.box2 button:hover,
+.box3 button:hover,
+.box4 button:hover,
+.box5 button:hover{
+  background-color: #f5c400;
+  color: #001840;
+  transform: scale(1.1); /* Scale up the card on hover */
+
+}
+
+.box i{
+  font-size: 7rem;
+  float: right;
+  margin: -20px 20px 20px 0;
+}
